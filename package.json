@@ -1,0 +1,29 @@
+{
+  "name": "Shadow-Frontend-Homework",
+  "version": "1.0.0",
+  "description": "Frontend Homework",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "8",
+    "es6-promise": "^4.0.5",
+    "express": "^4.15.2",
+    "fetch-ponyfill": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.1",
+    "phantomjs-prebuilt": "^2.1.7",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --config webpack.config.js",
+    "start:dev": "webpack-dev-server",
+    "watch": "webpack --watch"
+  },
+  "author": "Shadow",
+  "license": "GPL-2.0"
+}
